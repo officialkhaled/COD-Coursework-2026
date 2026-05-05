@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Khaled Hossain — Portfolio</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap"
-          rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
 
     <style>
         /* ── RESET & TOKENS ─────────────────────────────────── */
@@ -252,7 +253,7 @@
             position: absolute;
             inset: 0;
             background-image: linear-gradient(rgba(200, 241, 53, 0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(200, 241, 53, 0.04) 1px, transparent 1px);
+                linear-gradient(90deg, rgba(200, 241, 53, 0.04) 1px, transparent 1px);
             background-size: 60px 60px;
             mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
         }
@@ -980,420 +981,426 @@
 
 <body>
 
-<!-- Custom cursor -->
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
-<nav>
-    <a class="nav-logo" href="#hero"><span>./</span>khaled</a>
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div style="display:flex; align-items:center; gap:0.75rem;">
-        <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
-        <a class="nav-cta resume-btn" href="CV_Khaled Hossain.pdf" target="_blank">Resume</a>
-        <a class="nav-cta" href="#contact">Hire me</a>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow"></div>
-    <div class="container hero-content">
-        <p class="hero-eyebrow">Available for opportunities</p>
-        <h1 class="hero-name">Khaled &nbsp;<em>Hossain</em></h1>
-        <p class="hero-role">Full-Stack Developer &amp; <span>Software Engineer</span></p>
-        <p class="hero-bio">
-            I build thoughtful digital experiences — clean interfaces, robust back-ends,
-            and everything in between. Passionate about turning complex problems into
-            elegant, maintainable solutions.
-        </p>
-        <div class="hero-ctas">
-            <a class="btn-primary" href="#projects">View my work</a>
-            <a class="btn-ghost" href="#contact">Get in touch</a>
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="#hero"><span>./</span>khaled</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+            <a class="nav-cta resume-btn" href="CV_Khaled Hossain.pdf" target="_blank">Resume</a>
+            <a class="nav-cta" href="#contact">Hire me</a>
         </div>
-    </div>
-    <div class="hero-scroll-hint">
-        <div class="scroll-line"></div>
-        <span>scroll</span>
-    </div>
-</section>
+    </nav>
 
-<!-- ABOUT -->
-<section id="about">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-visual reveal">
-                <div class="about-card-bg"></div>
-                <div class="about-initials">
-                    <img src="IMG_0209.JPG" style="width: 94%; border-radius: 8px;" alt="Profile Image">
-                </div>
-                <div class="about-badge">OPEN TO<br/>WORK ✦</div>
-            </div>
-            <div class="about-text reveal">
-                <p class="section-label">About me</p>
-                <h2 class="section-title">Crafting code that<br/><em>actually matters.</em></h2>
-                <p>
-                    Hi, I'm Khaled — a developer who cares as much about the quality of
-                    the code as the quality of the product it powers. I've built and shipped
-                    web apps across the stack, from pixel-perfect front-ends to scalable
-                    APIs and cloud infrastructure.
-                </p>
-                <p>
-                    When I'm not writing code, I'm exploring new frameworks, contributing
-                    to open-source, or reading about system design and performance
-                    engineering.
-                </p>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">1.5+</div>
-                        <div class="stat-label">Years exp.</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">7+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Coffee</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <div class="container">
-        <p class="section-label reveal">What I work with</p>
-        <h2 class="section-title reveal">Technical <em>expertise</em></h2>
-        <p class="section-subtitle reveal">A curated toolkit built over years of real-world projects.</p>
-        <div class="skills-grid">
-            <div class="skill-card reveal">
-                <div class="skill-icon">⚡</div>
-                <p class="skill-category">Frontend</p>
-                <h3 class="skill-title">UI Engineering</h3>
-                <div class="skill-tags">
-                    <span class="tag">React.js</span>
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">TailwindCSS</span>
-                    <span class="tag">HTML / CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon">🛠️</div>
-                <p class="skill-category">Backend</p>
-                <h3 class="skill-title">Server & APIs</h3>
-                <div class="skill-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">Laravel</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">REST APIs</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">PostgreSQL</span>
-                </div>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon">☁️</div>
-                <p class="skill-category">DevOps & Cloud</p>
-                <h3 class="skill-title">Infrastructure</h3>
-                <div class="skill-tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">GitHub Actions</span>
-                    <span class="tag">Vercel</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">Kubernetes</span>
-                    <span class="tag">Jenkins</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <div class="container">
-        <p class="section-label reveal">Selected work</p>
-        <h2 class="section-title reveal">Projects I'm <em>proud of</em></h2>
-        <p class="section-subtitle reveal">A few things I've built — real problems, real solutions.</p>
-        <div class="projects-grid">
-
-            <div class="project-card reveal">
-                <div class="project-thumb">
-                    <div class="project-thumb-inner">🛒</div>
-                    <span class="project-thumb-label">Full-Stack</span>
-                </div>
-                <div class="project-body">
-                    <p class="project-number">01</p>
-                    <h3 class="project-title">E-Commerce Platform</h3>
-                    <p class="project-desc">
-                        Alibaba-inspired e-commerce platform with real-time order management, built using React.js, Inertia.js,
-                        TailwindCSS, Laravel, and MySQL, featuring RESTful APIs, optimized queries, and scalable backend
-                        architecture.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Inertia.js</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">jQuery</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">GitHub Actions</span>
-                        <span class="tag">CI/CD</span>
-                    </div>
-                    <a class="project-link" href="https://banglab2bb2c.com/" target="_blank" rel="noopener">
-                        View Live Site →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <div class="project-thumb">
-                    <div class="project-thumb-inner">📊</div>
-                    <span class="project-thumb-label">DevOps</span>
-                </div>
-                <div class="project-body">
-                    <p class="project-number">02</p>
-                    <h3 class="project-title">Cloud-Native CI/CD Pipeline</h3>
-                    <p class="project-desc">
-                        CI/CD pipeline with Jenkins automating build, test, and deployment, containerized apps using Docker,
-                        deployed to Kubernetes with YAML configurations, enabling rolling updates, scaling, and Git-based version
-                        control.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tag">Docker</span>
-                        <span class="tag">Jenkins</span>
-                        <span class="tag">Kubernetes</span>
-                        <span class="tag">Minikube</span>
-                        <span class="tag">GitHub Actions</span>
-                        <span class="tag">CI/CD</span>
-                        <span class="tag">Webhooks</span>
-                    </div>
-                    <a class="project-link" href="https://github.com/officialkhaled/cod_coursework_project" target="_blank"
-                       rel="noopener">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <div class="project-thumb">
-                    <div class="project-thumb-inner">🤖</div>
-                    <span class="project-thumb-label">AI / ML</span>
-                </div>
-                <div class="project-body">
-                    <p class="project-number">03</p>
-                    <h3 class="project-title">AI Chat Application</h3>
-                    <p class="project-desc">
-                        An LLM-powered assistant with conversation history, streaming
-                        responses, and custom prompt engineering.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">React</span>
-                        <span class="tag">OpenAI</span>
-                    </div>
-                    <a class="project-link" href="https://github.com/khaledhossain-devacc" target="_blank" rel="noopener">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-    <div class="container">
-        <p class="section-label reveal">Work history</p>
-        <h2 class="section-title reveal">Where I've <em>worked</em></h2>
-        <p class="section-subtitle reveal">Roles where I've grown, shipped, and made an impact.</p>
-
-        <div class="timeline">
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <p class="timeline-date">Apr 2025 — Aug 2025</p>
-                <h3 class="timeline-role">Software Engineer</h3>
-                <p class="timeline-company">Kiwii IT · Dhaka, Bangladesh</p>
-                <p class="timeline-desc">
-                    Leading front-end architecture for a SaaS product serving thousands of
-                    users. Rebuilt the core dashboard, cutting load time by 40%. Collaborated
-                    closely with product and design to ship high-quality features weekly.
-                </p>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <p class="timeline-date">May 2024 — Apr 2025</p>
-                <h3 class="timeline-role">Junior Software Engineer</h3>
-                <p class="timeline-company">Skylark Soft Ltd · Dhaka, Bangladesh</p>
-                <p class="timeline-desc">
-                    Developed bespoke websites and web apps for clients across e-commerce,
-                    finance, and media. Maintained CI/CD pipelines and contributed to
-                    internal tooling that accelerated the team's delivery cycle.
-                </p>
-            </div>
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <p class="timeline-date">Jan 2024 — Apr 2024</p>
-                <h3 class="timeline-role">Software Engineer Intern</h3>
-                <p class="timeline-company">Skylark Soft Ltd · Dhaka, Bangladesh</p>
-                <p class="timeline-desc">
-                    Took on independent projects building landing pages, internal tools, and
-                    small web applications for startups and small businesses across various
-                    industries.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <div class="container">
-        <div class="contact-inner">
-            <p class="section-label reveal" style="justify-content:center">Say hello</p>
-            <h2 class="section-title reveal">Let's build something<br/><em>together.</em></h2>
-            <p class="section-subtitle reveal" style="margin:0 auto 0;">
-                Whether it's a full project, a quick question, or a collaboration —
-                my inbox is always open.
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Available for opportunities</p>
+            <h1 class="hero-name">Khaled &nbsp;<em>Hossain</em></h1>
+            <p class="hero-role">Software Engineer &amp; <span>DevOps Engineer</span></p>
+            <p class="hero-bio">
+                I build thoughtful digital experiences — clean interfaces, robust back-ends,
+                and everything in between. Passionate about turning complex problems into
+                elegant, maintainable solutions.
             </p>
-            <a class="contact-email reveal" href="mailto:khaledhossain.dev@hotmail.com">
-                khaledhossain.dev@hotmail.com
-            </a>
-            <div class="contact-socials reveal">
-                <a class="social-link" href="https://www.linkedin.com/in/khaledhossain-devacc/" target="_blank"
-                   rel="noopener">
-                    ↗ LinkedIn
-                </a>
-                <a class="social-link" href="https://github.com/officialkhaled" target="_blank" rel="noopener">
-                    ↗ GitHub
-                </a>
+            <div class="hero-ctas">
+                <a class="btn-primary" href="#projects">View my work</a>
+                <a class="btn-ghost" href="#contact">Get in touch</a>
             </div>
         </div>
-    </div>
-</section>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+        </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <span class="footer-logo">Khaled Hossain</span>
-    <span>Designed &amp; built with ♥</span>
-    <span>↑ <a href="#hero" style="color:inherit;text-decoration:none;cursor:none;">Back to top</a></span>
-</footer>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-card-bg"></div>
+                    <div class="about-initials">
+                        <img src="IMG_0209.JPG" style="width: 94%; border-radius: 8px;" alt="Profile Image">
+                    </div>
+                    <div class="about-badge">OPEN TO<br />WORK ✦</div>
+                </div>
+                <div class="about-text reveal">
+                    <p class="section-label">About me</p>
+                    <h2 class="section-title">Crafting code that<br /><em>actually matters.</em></h2>
+                    <p>
+                        Hi, I'm Khaled — a developer who cares as much about the quality of
+                        the code as the quality of the product it powers. I've built and shipped
+                        web apps across the stack, from pixel-perfect front-ends to scalable
+                        APIs and cloud infrastructure.
+                    </p>
+                    <p>
+                        When I'm not writing code, I'm exploring new frameworks, contributing
+                        to open-source, or reading about system design and performance
+                        engineering.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1.5+</div>
+                            <div class="stat-label">Years exp.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Coffee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script>
-    /* ── CUSTOM CURSOR ───────────────────────────────── */
-    const dot = document.getElementById('cursorDot');
-    const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <p class="section-label reveal">What I work with</p>
+            <h2 class="section-title reveal">Technical <em>expertise</em></h2>
+            <p class="section-subtitle reveal">A curated toolkit built over years of real-world projects.</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⚡</div>
+                    <p class="skill-category">Frontend</p>
+                    <h3 class="skill-title">UI Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🛠️</div>
+                    <p class="skill-category">Backend</p>
+                    <h3 class="skill-title">Server & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">☁️</div>
+                    <p class="skill-category">DevOps & Cloud</p>
+                    <h3 class="skill-title">Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    document.addEventListener('mousemove', e => {
-        mx = e.clientX;
-        my = e.clientY;
-    });
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <p class="section-label reveal">Selected work</p>
+            <h2 class="section-title reveal">Projects I'm <em>proud of</em></h2>
+            <p class="section-subtitle reveal">A few things I've built — real problems, real solutions.</p>
+            <div class="projects-grid">
 
-    function animateCursor() {
-        rx += (mx - rx) * 0.14;
-        ry += (my - ry) * 0.14;
-        dot.style.left = mx + 'px';
-        dot.style.top = my + 'px';
-        ring.style.left = rx + 'px';
-        ring.style.top = ry + 'px';
-        requestAnimationFrame(animateCursor);
-    }
+                <div class="project-card reveal">
+                    <div class="project-thumb">
+                        <div class="project-thumb-inner">🛒</div>
+                        <span class="project-thumb-label">Full-Stack</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">01</p>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">
+                            Alibaba-inspired e-commerce platform with real-time order management, built using React.js,
+                            Inertia.js,
+                            TailwindCSS, Laravel, and MySQL, featuring RESTful APIs, optimized queries, and scalable
+                            backend
+                            architecture.
+                        </p>
+                        <div class="project-stack">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Inertia.js</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">jQuery</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                        <a class="project-link" href="https://banglab2bb2c.com/" target="_blank" rel="noopener">
+                            View Live Site →
+                        </a>
+                    </div>
+                </div>
 
-    animateCursor();
+                <div class="project-card reveal">
+                    <div class="project-thumb">
+                        <div class="project-thumb-inner">📊</div>
+                        <span class="project-thumb-label">DevOps</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">02</p>
+                        <h3 class="project-title">Cloud-Native CI/CD Pipeline</h3>
+                        <p class="project-desc">
+                            CI/CD pipeline with Jenkins automating build, test, and deployment, containerized apps using
+                            Docker,
+                            deployed to Kubernetes with YAML configurations, enabling rolling updates, scaling, and
+                            Git-based version
+                            control.
+                        </p>
+                        <div class="project-stack">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Minikube</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Webhooks</span>
+                        </div>
+                        <a class="project-link" href="https://github.com/officialkhaled/cod_coursework_project"
+                            target="_blank" rel="noopener">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
 
-    document.querySelectorAll('a, button, .project-card, .skill-card, .stat-item').forEach(el => {
-        el.addEventListener('mouseenter', () => ring.classList.add('hover'));
-        el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
-    });
+                <div class="project-card reveal">
+                    <div class="project-thumb">
+                        <div class="project-thumb-inner">🤖</div>
+                        <span class="project-thumb-label">AI / ML</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">03</p>
+                        <h3 class="project-title">AI Chat Application</h3>
+                        <p class="project-desc">
+                            An LLM-powered assistant with conversation history, streaming
+                            responses, and custom prompt engineering.
+                        </p>
+                        <div class="project-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">React</span>
+                            <span class="tag">OpenAI</span>
+                        </div>
+                        <a class="project-link" href="https://github.com/khaledhossain-devacc" target="_blank"
+                            rel="noopener">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
 
-    /* ── SCROLL REVEAL ───────────────────────────────── */
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => entry.target.classList.add('visible'), i * 80);
-                observer.unobserve(entry.target);
-            }
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="container">
+            <p class="section-label reveal">Work history</p>
+            <h2 class="section-title reveal">Where I've <em>worked</em></h2>
+            <p class="section-subtitle reveal">Roles where I've grown, shipped, and made an impact.</p>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">Apr 2025 — Aug 2025</p>
+                    <h3 class="timeline-role">Software Engineer</h3>
+                    <p class="timeline-company">Kiwii IT · Dhaka, Bangladesh</p>
+                    <p class="timeline-desc">
+                        Leading front-end architecture for a SaaS product serving thousands of
+                        users. Rebuilt the core dashboard, cutting load time by 40%. Collaborated
+                        closely with product and design to ship high-quality features weekly.
+                    </p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">May 2024 — Apr 2025</p>
+                    <h3 class="timeline-role">Junior Software Engineer</h3>
+                    <p class="timeline-company">Skylark Soft Ltd · Dhaka, Bangladesh</p>
+                    <p class="timeline-desc">
+                        Developed bespoke websites and web apps for clients across e-commerce,
+                        finance, and media. Maintained CI/CD pipelines and contributed to
+                        internal tooling that accelerated the team's delivery cycle.
+                    </p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">Jan 2024 — Apr 2024</p>
+                    <h3 class="timeline-role">Software Engineer Intern</h3>
+                    <p class="timeline-company">Skylark Soft Ltd · Dhaka, Bangladesh</p>
+                    <p class="timeline-desc">
+                        Took on independent projects building landing pages, internal tools, and
+                        small web applications for startups and small businesses across various
+                        industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <p class="section-label reveal" style="justify-content:center">Say hello</p>
+                <h2 class="section-title reveal">Let's build something<br /><em>together.</em></h2>
+                <p class="section-subtitle reveal" style="margin:0 auto 0;">
+                    Whether it's a full project, a quick question, or a collaboration —
+                    my inbox is always open.
+                </p>
+                <a class="contact-email reveal" href="mailto:khaledhossain.dev@hotmail.com">
+                    khaledhossain.dev@hotmail.com
+                </a>
+                <div class="contact-socials reveal">
+                    <a class="social-link" href="https://www.linkedin.com/in/khaledhossain-devacc/" target="_blank"
+                        rel="noopener">
+                        ↗ LinkedIn
+                    </a>
+                    <a class="social-link" href="https://github.com/officialkhaled" target="_blank" rel="noopener">
+                        ↗ GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footer-logo">Khaled Hossain</span>
+        <span>Designed &amp; built with ♥</span>
+        <span>↑ <a href="#hero" style="color:inherit;text-decoration:none;cursor:none;">Back to top</a></span>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        /* ── CUSTOM CURSOR ───────────────────────────────── */
+        const dot = document.getElementById('cursorDot');
+        const ring = document.getElementById('cursorRing');
+        let mx = 0, my = 0, rx = 0, ry = 0;
+
+        document.addEventListener('mousemove', e => {
+            mx = e.clientX;
+            my = e.clientY;
         });
-    }, {threshold: 0.12});
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        function animateCursor() {
+            rx += (mx - rx) * 0.14;
+            ry += (my - ry) * 0.14;
+            dot.style.left = mx + 'px';
+            dot.style.top = my + 'px';
+            ring.style.left = rx + 'px';
+            ring.style.top = ry + 'px';
+            requestAnimationFrame(animateCursor);
+        }
 
-    /* ── ACTIVE NAV ──────────────────────────────────── */
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const navObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(a => {
-                    a.style.color = a.getAttribute('href') === '#' + entry.target.id
-                        ? 'var(--accent)' : '';
-                });
-            }
+        animateCursor();
+
+        document.querySelectorAll('a, button, .project-card, .skill-card, .stat-item').forEach(el => {
+            el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+            el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
         });
-    }, {rootMargin: '-50% 0px -50% 0px'});
 
-    sections.forEach(s => navObserver.observe(s));
+        /* ── SCROLL REVEAL ───────────────────────────────── */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
 
-    /* ── FLOATING PARTICLES ──────────────────────────── */
-    const hero = document.getElementById('hero');
-    for (let i = 0; i < 18; i++) {
-        const p = document.createElement('div');
-        const size = Math.random() * 3 + 1;
-        const x = Math.random() * 100;
-        const delay = Math.random() * 6;
-        const dur = 6 + Math.random() * 8;
-        Object.assign(p.style, {
-            position: 'absolute',
-            width: size + 'px', height: size + 'px',
-            borderRadius: '50%',
-            background: Math.random() > 0.5 ? 'var(--accent)' : 'var(--accent2)',
-            left: x + '%',
-            bottom: '-10px',
-            opacity: Math.random() * 0.4 + 0.1,
-            animation: `floatParticle ${dur}s ${delay}s infinite linear`,
-            pointerEvents: 'none',
-            zIndex: 1,
-        });
-        hero.appendChild(p);
-    }
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    const style = document.createElement('style');
-    style.textContent = `
+        /* ── ACTIVE NAV ──────────────────────────────────── */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const navObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(a => {
+                        a.style.color = a.getAttribute('href') === '#' + entry.target.id
+                            ? 'var(--accent)' : '';
+                    });
+                }
+            });
+        }, { rootMargin: '-50% 0px -50% 0px' });
+
+        sections.forEach(s => navObserver.observe(s));
+
+        /* ── FLOATING PARTICLES ──────────────────────────── */
+        const hero = document.getElementById('hero');
+        for (let i = 0; i < 18; i++) {
+            const p = document.createElement('div');
+            const size = Math.random() * 3 + 1;
+            const x = Math.random() * 100;
+            const delay = Math.random() * 6;
+            const dur = 6 + Math.random() * 8;
+            Object.assign(p.style, {
+                position: 'absolute',
+                width: size + 'px', height: size + 'px',
+                borderRadius: '50%',
+                background: Math.random() > 0.5 ? 'var(--accent)' : 'var(--accent2)',
+                left: x + '%',
+                bottom: '-10px',
+                opacity: Math.random() * 0.4 + 0.1,
+                animation: `floatParticle ${dur}s ${delay}s infinite linear`,
+                pointerEvents: 'none',
+                zIndex: 1,
+            });
+            hero.appendChild(p);
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
       @keyframes floatParticle {
         0%{ opacity: 0; transform: translateY(0); }
         100% { opacity: 0; transform: translateY(-100vh); }
       }
     `;
-    document.head.appendChild(style);
+        document.head.appendChild(style);
 
-    /* ── THEME TOGGLE ────────────────────────────────── */
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
+        /* ── THEME TOGGLE ────────────────────────────────── */
+        const themeToggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
 
-    // Restore saved preference
-    if (localStorage.getItem('theme') === 'light') {
-        root.classList.add('light');
-        themeToggle.textContent = '☀️';
-    }
+        // Restore saved preference
+        if (localStorage.getItem('theme') === 'light') {
+            root.classList.add('light');
+            themeToggle.textContent = '☀️';
+        }
 
-    themeToggle.addEventListener('click', () => {
-        const isLight = root.classList.toggle('light');
-        themeToggle.textContent = isLight ? '☀️' : '🌙';
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
-</script>
+        themeToggle.addEventListener('click', () => {
+            const isLight = root.classList.toggle('light');
+            themeToggle.textContent = isLight ? '☀️' : '🌙';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script>
 </body>
+
 </html>
