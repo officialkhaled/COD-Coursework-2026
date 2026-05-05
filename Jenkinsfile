@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "khaled197/portfolio-app:v1"
+        WORKER_IP = "52.91.137.168"
     }
 
     stages {
@@ -20,14 +21,24 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker push $IMAGE_NAME'
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    sh 'docker push $IMAGE_NAME'
+                }
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'kubectl apply -f k8s/deployment.yaml'
-                sh 'kubectl apply -f k8s/service.yaml'
+                sh """
+                ssh -o StrictHostKeyChecking=no ec2-user@$WORKER_IP '
+                    cd ~/App &&
+                    git pull origin main &&
+                    kubectl apply -f k8s/deployment.yaml &&
+                    kubectl apply -f k8s/service.yaml &&
+                    kubectl rollout status deployment/portfolio-deployment
+                '
+                """
             }
         }
     }
