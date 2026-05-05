@@ -31,7 +31,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
-                ssh -o StrictHostKeyChecking=no ec2-user@$WORKER_IP '
+                ssh -i /var/lib/jenkins/.ssh/id_rsa -o StrictHostKeyChecking=no ec2-user@$WORKER_IP '
                     cd ~/App &&
                     git pull origin main &&
                     kubectl apply -f k8s/deployment.yaml &&
