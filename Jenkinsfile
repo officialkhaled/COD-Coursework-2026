@@ -36,6 +36,7 @@ pipeline {
                     git pull origin main &&
                     kubectl apply -f k8s/deployment.yaml &&
                     kubectl apply -f k8s/service.yaml &&
+                    kubectl rollout restart deployment/portfolio-deployment &&
                     kubectl rollout status deployment/portfolio-deployment
                 '
                 """
