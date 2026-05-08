@@ -1,6 +1,5 @@
 # Container Orchestration for Dev-Ops | Coursework
 
-# 🚀 DevOps CI/CD Pipeline with Docker, Jenkins & Kubernetes (AWS EC2)
 
 ## 📌 Overview
 
@@ -12,7 +11,7 @@ This project demonstrates a complete **CI/CD pipeline** using:
 * Kubernetes - Minikube (Orchestration)
 * AWS EC2 (Infrastructure)
 
-The application is a simple **portfolio website served via Nginx**, containerised using Docker and deployed using Kubernetes.
+The application is a simple **portfolio website**, containerised using Docker and deployed using Kubernetes.
 
 ---
 
@@ -54,7 +53,7 @@ Before starting, ensure:
 
 # ☁️ Step 1: Setup AWS EC2 Instances
 
-Create **2 EC2 instances (Amazon Linux)**:
+Create **2 EC2 instances (AWS)**:
 
 ### Jenkins Instance
 
@@ -78,13 +77,7 @@ Create **2 EC2 instances (Amazon Linux)**:
 
 # 🔧 Step 2: Setup Worker EC2 (Kubernetes)
 
-SSH into Worker EC2:
-
-```bash
-ssh ec2-user@<WORKER_PUBLIC_IP>
-```
-
-Install Docker:
+Install & Start Docker:
 
 ```bash
 sudo yum install docker -y
@@ -125,12 +118,6 @@ kubectl get nodes
 
 # 🧰 Step 3: Setup Jenkins EC2
 
-SSH into Jenkins EC2:
-
-```bash
-ssh ec2-user@<JENKINS_PUBLIC_IP>
-```
-
 Install Java:
 
 ```bash
@@ -154,7 +141,7 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
 
-Install Docker:
+Install & Start Docker:
 
 ```bash
 sudo yum install docker -y
@@ -204,24 +191,24 @@ chmod 600 ~/.ssh/authorized_keys
 # 📦 Step 5: Clone Repository (Worker EC2)
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
-cd <YOUR_REPO>
+git clone https://github.com/officialkhaled/https://github.com/officialkhaled/COD-Coursework-2026.git App
+cd App
 ```
 
 ---
 
 # 🐳 Step 6: Docker Setup
 
-Build image manually (test):
+Build image manually:
 
 ```bash
-docker build -t your-dockerhub-username/portfolio-app:v1 .
+docker build -t khaled197/portfolio-app:v1 .
 ```
 
 Run container:
 
 ```bash
-docker run -d -p 8081:80 your-dockerhub-username/portfolio-app:v1
+docker run -d -p 8081:80 khaled197/portfolio-app:v1
 ```
 
 ---
@@ -246,7 +233,7 @@ kubectl get svc
 
 # ⚙️ Step 8: Jenkins Pipeline Setup
 
-### Create Pipeline Job
+### Create Pipeline Job (Without Webhook)
 
 * New Item → Pipeline
 * Select:
@@ -266,7 +253,7 @@ Manage Jenkins → Credentials → Add
 
 * ID: `dockerhub-creds`
 * Username: Docker Hub username
-* Password: Docker Hub password/token
+* Password: Docker Hub password
 
 ---
 
@@ -330,7 +317,7 @@ git push origin main
 ## Option 1: Docker (Recommended for browser)
 
 ```bash
-docker run -d -p 80:80 your-dockerhub-username/portfolio-app:latest
+docker run -d -p 80:80 khaled197/portfolio-app:latest
 ```
 
 Open:
@@ -387,9 +374,3 @@ docker ps
 # 👨‍💻 Author
 
 Khaled Hossain
-
----
-
-# 📄 License
-
-For academic use only
