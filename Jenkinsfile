@@ -42,11 +42,21 @@ pipeline {
             steps {
                 sh """
                 ssh -i /var/lib/jenkins/.ssh/id_rsa -o StrictHostKeyChecking=no ec2-user@$WORKER_IP '
+                    export JENKINS_NODE_COOKIE=dontKillMe &&
+
                     cd ~/App &&
+
                     git pull origin main &&
+
                     kubectl set image deployment/portfolio-deployment portfolio-container=$IMAGE_NAME &&
+
                     kubectl apply -f k8s/service.yaml &&
-                    kubectl rollout status deployment/portfolio-deployment
+
+                    kubectl rollout status deployment/portfolio-deployment &&
+
+                    pkill -f "kubectl port-forward" || true &&
+
+                    nohup kubectl port-forward --address 0.0.0.0 service/portfolio-service 30007:80 > portforward.log 2>&1 &
                 '
                 """
             }
