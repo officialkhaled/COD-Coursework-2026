@@ -8,7 +8,7 @@ pipeline {
     environment {
         IMAGE_NAME = "khaled197/portfolio-app:${BUILD_NUMBER}"
         LATEST_IMAGE = "khaled197/portfolio-app:latest"
-        WORKER_IP = "52.91.137.168"
+        WORKER_IP = "107.23.229.88"
     }
 
     stages {
